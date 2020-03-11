@@ -7,7 +7,6 @@ body {
     font-family: Poppins,sans-serif;
 }
 header {
-    height: 82px;
     border-bottom: 1px solid #ccc;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -15,7 +14,6 @@ header {
 header .logo {
     border-right: 1px solid #ccc;
     display: flex;
-    height: 82px;
     align-items: center;
 }
 header .logo .logo-items {
@@ -133,15 +131,11 @@ header .navigation .search {
 }
 .news .main-news .featured .featured-image {
     width: 100%;
-    height: 430px;
     position: relative;
 }
 .news .main-news .featured .featured-image img {
     width: 100%;
     height: 100%;
-    position: absolute;
-    
-    
 }
 .news .main-news .featured .featured-image .featured-content {
     position: absolute;
@@ -192,13 +186,9 @@ header .navigation .search {
 }
 .news .news-item-image {
     width: 100%;
-    height: 205px;
     position: relative;
 }
 .news .news-item-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
 }
@@ -225,13 +215,9 @@ header .navigation .search {
 }
 .articles .article-image {
     width: 376px;
-    height: 174px;
     position: relative;
 }
 .articles .article-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
 }
@@ -303,7 +289,7 @@ footer .second-footer .footer-icons img {
 .side-news .side-news-item table tbody tr:first-child td {
     border-top: 1px solid #e4e4e4;
 }
-.side-news .side-news-item table tbody tr:last-child td {
+.side-news .side-news-item table tbody tr:last-child {
     border-bottom: none;
 }
 .side-news .side-news-item table tbody tr {
