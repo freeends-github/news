@@ -13,7 +13,11 @@
 		<div>
 			<div class="llogo_container">
 				<nav class="llogo_top">
-					<article class="black_article"><h1>THE</h1></article>
+					<article class="black_article">
+						<span>T</span>
+						<span>H</span>
+						<span>E</span>
+					</article>
 					<article class="red_article"><h2>23 November 2017</h2></article>
 				</nav>
 				<nav class="llogo_bottom">
@@ -38,10 +42,12 @@
 							<li><a href="#">Bussiness</a></li>
 							<li><a href="#">Weather</a></li>
 							<li><a href="#">Opinion</a></li>
-						</ul>	
+						</ul>
+						<i class="fas fa-bars"></i>	
 					</nav>
 					<nav class="search_container">
 						<i class="fas fa-search"></i>
+						<input type="search" name="" id="">
 					</nav>
 				</div>
 			</div>
@@ -300,5 +306,19 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="./app.js"></script>
+	<script type="text/javascript">
+			$(".search_container i").on("click",function(){
+				if($(window).width() <= 1024){
+				$(".second_list").toggleClass("show2");
+				$(".search_container input").css("padding","16px 80px 16px 10px");
+				}
+				if($(window).width() <= 600){
+					$(".search_container input").css("padding","6px 80px 6px 10px");
+				}
+			}).trigger("resize");
+
+	</script>
 </body>
 </html>
