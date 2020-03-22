@@ -6,26 +6,20 @@
 }
 body {
     font-family: Poppins,sans-serif;
+    overflow-x: hidden;
+    width: 100%;
 }
 .container{
-    width: 87%;
+    width: 97%;
     margin: auto;
 }
 header{
+    
     position: relative;
     border-bottom: 1px solid #95989A;
+    
 }
-header .toggler {
-    border: none;
-    outline: none;
-    position: relative;
-    width: 30px;
-    height: 26px;
-    padding: 0;
-    background: transparent;
-    opacity: 0;
-    visibility: hidden;
-}
+
 .logo{
     
     overflow: hidden;
@@ -98,6 +92,7 @@ header .header-items{
     padding-bottom: 0.2em;
     border-bottom: 1px solid #95989A;
     /* margin-left: -1.5em; */
+    margin-bottom: 0;
     
 }
 /* 
@@ -173,7 +168,7 @@ header .border-bottom1{
 .nav-links{
     display: flex;
     width: 60%;
-    /* margin-top: 0.4em; */
+    margin-top: 0.6em;
     /* padding: 0.8em 0; */
     
     
@@ -182,19 +177,25 @@ header .border-bottom1{
 .nav-links ul{
     display: flex;
     list-style: none;
-    border-right: 1px solid #95989A;
-    padding: 0.8em 0;
+    /* border-right: 1px solid #95989A; */
    
+}
+.nav-links ul li:first-child{
+    margin-left: 1em;
+  
 }
 .nav-links ul li a{
     text-decoration: none;
     color: black;
     font-size: 16px;
-    padding-right: 1.8em;
+    margin-right: 1.8em;
     font-weight: 500;
+
+    
 }
 .opinion{
     padding-right: 0;
+   
 }
 /* .border-right{
     position: absolute;
@@ -219,12 +220,12 @@ header .border-bottom1{
 .container1 {
     position: relative;
     /* margin: auto; */
-    top: 50%;
+    top: 17px;
     left: 10%;
     right: 0;
     bottom: 0;
-    width: 200px;
-    height: 64px;
+    width: 20px;
+    height: 0px;
     
     
 } 
@@ -252,7 +253,7 @@ header .border-bottom1{
         content: "";
         position: absolute;
         margin: auto;
-        top: 22px;
+        top: 18px;
         right: 0;
         bottom: 0;
         left: 20px;
@@ -349,8 +350,12 @@ main .container{
 .news{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 1.5em;
+    grid-gap: 1em;
 }
+/* .main-news{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+} */
 .main-news .featured {
     position: relative;
     width: 100%;
@@ -358,11 +363,13 @@ main .container{
 }
 .main-news .featured img{
     width: 100%;
+   
+   
 }
 .main-news .featured .on-image{
     position: absolute;
     right: 15px;
-    bottom: 170px;
+    bottom: 150px;
     padding: 5px;
     color: #000;
     font-weight: 500;
@@ -372,17 +379,19 @@ main .container{
 .featured-content{
     position: absolute;
     background: rgba(242, 41,41, .7);
-    bottom: 8px;
+    bottom: 0px;
     width: 100%;
     color: #fff;
-    padding: 18px 37px;
+    padding: 10px 37px;
 }
 .featured-content h2{
-    font-size: 20px;
-    padding-bottom: 7px;
+    font-size: 16px;
+    padding-bottom: 0px;
+    font-weight: 700;
 }
 .featured-content p{
-    font-size: 17px;
+    font-size: 16px;
+    margin-bottom: 0;
 }
 .posht-featured{
     display: grid;
@@ -398,6 +407,7 @@ main .container{
 .news-item .news-item-image img{
      /* position: relative; */
      width: 100%;
+     height: 100%;
 }
 .news-item-image .on-image {
     background-color: #fff;
@@ -421,6 +431,9 @@ main .container{
 .news-item p {
     font-size: 13px;
 }
+/* .internation-news-item > img {
+    width: 134px;
+} */
 
 .side-news .side-news-item table {
     width: 100%;
@@ -442,17 +455,17 @@ main .container{
     border-bottom: 1px solid #E4E4E4;
 }
 .side-news .side-news-item table tbody tr td {
-    padding: 8px 10px;
+    padding: 2px 10px;
     
 }
 .side-news .side-news-item table thead {
-    padding: 8px 8px;
+    padding: 0px 8px;
 }
 
 .side-news .side-news-item table thead tr th {
     text-align: left;
     font-weight: normal;
-    padding: 13px 0;
+    padding: 8px 0;
     padding-left: 10px;
 }
 .side-news-item {
@@ -473,6 +486,7 @@ main .container{
 .side-news .side-news-item table tbody tr td p{
     font-size: 14px ;
     color: #6E6E6E;
+    margin-top: 0px;
 }
 .side-news .side-news-item table tbody tr td .red-color{
     color: #C3150C;
@@ -490,7 +504,7 @@ main .container{
     
 }
 .internation-news-items{
-    padding: 0 0.9em;
+    padding: 0 0;
 }
 .internation-news-item{
     display: flex;
@@ -502,7 +516,7 @@ main .container{
 .internation-news-item-content p{
     font-size: 14px;
     color: #707070;
-    padding-bottom: 1.2em;
+    padding-bottom: 0.01em;
 
 }
 .internation-news-item-content h2{
@@ -514,7 +528,7 @@ main .container{
     border-bottom: none;
     font-size: 16px;
     text-align: center;
-    padding-top: 1.2em;
+    padding-top: 1em;
     font-weight: 500;
 }
 
@@ -531,7 +545,7 @@ main .container{
    justify-content: space-between;
 }
 .articles .article-image {
-    width: 423px;
+    width: 300px;
     position: relative;
 }
 .articles .article-image img {
@@ -539,13 +553,17 @@ main .container{
     height: 100%;
 }
 .articles .article-image .on-image {
-    width: 148px;
+    width: 45%;
+    height: fit-content;
     background-color: #F22929;
     padding: 5px;
     color: #fff;
     position: absolute;
     bottom: 15px;
     left: 19px;
+}
+.on-image p{
+  margin-bottom: 0;
 }
 .articles .article:nth-child(2) .article-image .on-image {
     background-color: #B029F2;
@@ -577,6 +595,7 @@ main .container{
     display: flex;
     justify-content: center;
     padding: 0.8em 0;
+    margin-bottom: 0;
 }
 .footer1 ul li a{
     text-decoration: none;
@@ -606,6 +625,10 @@ main .container{
 .sponsors img{
     padding-left: 1.5em;
 }
+.nav-links ul li a:hover{
+    border-bottom: 1px solid black;
+    
+}
 @media screen and (max-width: 1224px){
     .featured-content{
         position: relative;
@@ -619,12 +642,93 @@ main .container{
 
 }
 
+ .toggler {
+    border: none;
+    outline: none;
+    position: relative;
+    float:  right;
+    left: 90%;
+    top: 20px;
+    width: 30px;
+    height: 26px;
+    padding: 0;
+    background: transparent;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
 @media screen and (max-width: 1024px) {
     
+    body {
+        overflow: auto !important; 
+      
+    }
+    body.navbar-open {
+        overflow: hidden !important;
+    }
+  .toggler {
+        visibility: visible;
+        opacity: 1;
+        z-index: 99999999999999999999 !important;
+    }
+    .nav-links {
+        transform: translateX(-1000px);
+        transition: transform .5s ease;
+        width: 100vw;
+        height: 100vh;
+        background-color: #C3150C;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .nav-links ul li:first-child{
+        margin-left: 0em;
+        margin-top: 20px;
+      
+    }
+    header .container .navigation .nav-links ul li a:hover {
+        border-bottom: 1px solid black !important;
+    }
+    .toggler.open ~ .nav-links {
+        transform: translateX(0) !important;
+        margin-top: 0;
+    }
+    
+    header .container .nav-links ul li {
+        padding: 20px 0px;
+    }
+    header .container .nav-links ul li a {
+        font-size: 30px !important;
+    }
+
+    .container1{
+        top: 660px;
+        left: -143px;
+    }
+    input:focus ~ .search{
+        right: -270px;
+
+    }
+
     .featured .on-image {
         height: 2em;
         top: 50%;
         /* bottom: 5%; */
+    }
+    .nav-links ul{
+        flex-direction: column;
+        text-align: left;
+        padding-left: 2em;
+        border: none;
+    }
+   
+    .nav-links ul li a{
+        margin: 5em 0.2em;
+       
+        
     }
     .news{
         grid-template-columns: 1fr;
@@ -653,6 +757,47 @@ main .container{
     }
    
 }
+
+
+.toggler span {
+    transition: all 0.5s ease;
+    width: 30px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    right: 0;
+}
+ .toggler span:first-child {
+    top: 0px;
+}
+.toggler span:nth-child(2) {
+    top: 7px;
+}
+ .toggler span:last-child {
+    top: 15px;
+}
+ .toggler {
+    z-index: 999999999999;
+}
+
+.toggler.open span {
+    transition: all 0.3s ease;
+}
+.toggler.open span:first-child {
+     transform: rotate(45deg);
+     top: 10px;
+}
+.toggler.open span:nth-child(2) {
+     display: none;
+ }
+.toggler.open span:last-child {
+     transform: rotate(-45deg);
+     top: 10px;
+ }
+
+ .toggler:focus{
+     outline: none;
+ }
 @media screen and (max-width:900px){
     .featured .on-image {
         height: 2em;
@@ -662,6 +807,19 @@ main .container{
 
 }
 @media screen and (max-width: 576px) {
+    .social-links ul{
+        flex-direction: column;
+        border: none;
+    }
+    #Facebook,#Youtube,#Instagram{
+        padding: 0;
+        margin-left: 0.5em;
+        border: none;
+    }
+    .toggler{
+        top: -50px;
+        left: 60%;
+    }
    
     .featured .on-image {
         height: 2em;
