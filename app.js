@@ -13,5 +13,4 @@ const hamburger = document.querySelector('.second_list i');
 hamburger.addEventListener("click",function(){
 	// list.style.display = 'block';
 	list.classList.toggle("showlist");
-	console.log("mire o o shoqi");
 });
